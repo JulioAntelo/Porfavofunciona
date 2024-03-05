@@ -1,11 +1,11 @@
-package com.example.demo
+package com.example.porfavofunciona
 
 import jakarta.persistence.*
 @Entity
 class Usuario {
-   @Id
-   @GeneratedValue(strategy = GenerationType.AUTO)
-   var idUsuario: Int? = null
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    var idUser: Int? = null
     var nombre: String? = null
     var tipoPeronsaje: String? = null
     var lineaPrincipal: String? = null

@@ -1,4 +1,4 @@
-package com.example.demo
+package com.example.porfavofunciona
 
 import jakarta.persistence.*
 
@@ -9,6 +9,6 @@ class Wins_Loses{
     var IdWins_Loses: Int? = null
     var PosibilidadesWin: Int? = null
     @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "idUsuario")
+    @JoinColumn(name = "idUser")
     var Usuario : Usuario? = null
 }
