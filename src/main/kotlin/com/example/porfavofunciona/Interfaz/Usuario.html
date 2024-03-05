@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h2>Create User</h2>
+    <form action="http://localhost:8081/Usuario/add" method="post">
+        <label class="text" for="nombrepost">Nombre:</label><br>
+        <input class="inputField" type="text" id="nombrepost" name="nombreUsuario"><br><br>
+        <label class="text" for="tipopost">Tipo de personaje que juega:</label><br>
+        <input class="inputField" type="text" id="tipopost" name="tipopersonaje"><br><br>
+        <label class="text" for="lineaPrincipalpost">Linea Principal Usuario:</label><br>
+        <input class="inputField" type="text" id="lineaPrincipalpost" name="lineaPrincipal">
+        <input type="submit" value="mandar">
+    </form>
+
+<h2>Read Users</h2>
+    <form action="http://localhost:8081/Usuario/all" method="get">
+        <input type="submit" value="mandar">
+    </form>
+
+<h2>Delete User</h2>
+    <form action="http://localhost:8081/Usuario/del" method="get">
+        <label class="text" for="Id_Borrar">Id del usuario a borrar</label>
+        <input class="inputField" type="text" id="Id_Borrar" name="IdBorrar">
+        <input type="submit" value="mandar">
+    </form>
+
+<h2>Update User</h2>
+    <form action="http://localhost:8081/Usuario/update" method="get">
+        <label class="text" for="Id_Actualizar">Id del usuario a actualizar</label>
+        <input class="inputField" type="text" id="Id_Actualizar" name="Id_Actualizar">
+        <label class="text" for="Nombre_Actualizar">Id del usuario a borrar</label>
+        <input class="inputField" type="text" id="Nombre_Actualizar" name="Nombre_Actualizar">
+        <input type="submit" value="mandar">
+    </form>
+</body>
+</html>
